@@ -60,7 +60,16 @@
 	<%
 	WifiService wifiService = new WifiService();
 	%>
-	<jsp:include page="header.jsp"></jsp:include>
+		<h1>와이파이 정보 구하기</h1>
+
+
+	<a href="index.jsp">홈</a> |
+	<a href="history.jsp">위치 히스토리 목록</a> |
+	<a href="wifiload.jsp">Open API 와이파이 정보 가져오기</a> |
+	<a href="history2.jsp">즐겨 찾기 보기</a> |
+	<a href="bookmark.jsp">즐겨 찾기 그룹 관리</a>
+	<br>
+	<br>
 
 	<form action="./index.jsp" method="get">
 		<label>LAT: <input type="text" name="lat" id="LAT" value="0.0"></label>
@@ -93,8 +102,6 @@
 				<th style="text-align: center;">작업일자</th>
 			</tr>
 		</thead>
-
-
 		<%
 		String lat = request.getParameter("lat");
 		String lnt = request.getParameter("lnt");
@@ -135,9 +142,14 @@
 		</tr>
 		<%}%>
 	</table>
+
+
+</head>
+<body>
+
+	<br>
+	<br>
+
+
 </body>
 </html>
-
-
-
-

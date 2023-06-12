@@ -43,12 +43,12 @@
 	<a href="index.jsp">홈</a> |
 	<a href="history.jsp">위치 히스토리 목록</a> |
 	<a href="wifiload.jsp">Open API 와이파이 정보 가져오기</a> |
-	<a href="history2.jsp">즐겨 찾기 보기</a> |
+	<a href="his.jsp">즐겨 찾기 보기</a> |
 	<a href="bookmark.jsp">즐겨 찾기 그룹 관리</a>
 	<br>
 	<br>
 		<form action="history2.jsp" method="get">
-		<button onclick="location.href='add.jsp'">북마크 그룹 이름 추가</button>
+		<button type="button" onclick="location.href='bookmark.jsp'">북마크 그룹 이름 추가</button>
 		<br>
 	</form>
 
